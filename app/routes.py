@@ -11,3 +11,7 @@ async def classify_event(event: EventRequest):
     """
     classified_messages = classify_parts_with_gpt(event.chat_log)
     return classified_messages
+
+@router.get("/")
+async def root():
+    return {"message": "service is working"}
