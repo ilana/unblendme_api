@@ -25,3 +25,6 @@ class EventRequest(BaseModel):
 class EventResponse(BaseModel):
     event_id: str
     classified_messages: List[ClassifiedMessage]  # Groups messages with parts
+
+class TextInput(BaseModel):
+    text: str
