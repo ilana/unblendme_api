@@ -8,7 +8,8 @@ class Message(BaseModel):
 class ClassifiedPart(BaseModel):
     part_id: str
     label: str
-    confidence: float
+    blended: float
+    quadrant: str = "unknown"# "positive", "negative", "neutral", or "mixed"
     emotion: str
     description: str
 
